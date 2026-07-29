@@ -3,98 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Epicteto — Os Estóicos</title>
+<title>Epicteto — Estoicismo</title>
+<meta name="description" content="Vida e ideias de Epicteto, filósofo estoico que nasceu escravo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="frieze">
-  <div class="frieze-inner">
-    <div class="brand">OS ESTÓI<span>C</span>OS</div>
-    <nav class="frieze-links" aria-label="Filósofos">
-      <a href="zenao.html">Zenão</a>
-      <a href="cleantes.html">Cleantes</a>
-      <a href="crisipo.html">Crisipo</a>
-      <a href="seneca.html">Sêneca</a>
-      <a href="epicteto.html" class="current">Epicteto</a>
-      <a href="marco-aurelio.html">Marco Aurélio</a>
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title"><a href="index.html">Estoicismo</a></p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="zenao.html">Zenão</a></li>
+        <li><a href="cleantes.html">Cleantes</a></li>
+        <li><a href="seneca.html">Sêneca</a></li>
+        <li><a href="epicteto.html" aria-current="page">Epicteto</a></li>
+        <li><a href="marco-aurelio.html">Marco Aurélio</a></li>
+      </ul>
     </nav>
+    <div class="font-controls" role="group" aria-label="Ajustar tamanho do texto">
+      <span>Texto</span>
+      <button id="font-decrease" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="font-reset" type="button" aria-label="Restaurar tamanho padrão do texto">A</button>
+      <button id="font-increase" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap" style="padding-top:20px">
-    <a class="back-link" href="index.html">← Voltar à Stoa</a>
-  </div>
+<main id="conteudo">
 
-  <section class="p-hero wrap">
-    <div class="coin large">
-      <div class="coin-inner">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Epictetus.jpg?width=700" alt="Retrato de Epicteto">
+  <p class="breadcrumb"><a href="index.html">Início</a> → Epicteto</p>
+
+  <article>
+    <div class="philo-header">
+      <div class="portrait-wrap">
+        <!-- Troque esta imagem substituindo o arquivo em imagens/epicteto.jpg -->
+        <img class="philo-portrait" src="imagens/epicteto.jpg" alt="Representação de Epicteto"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'philo-portrait placeholder',textContent:'E'}))">
       </div>
-    </div>
-    <h1>Epicteto</h1>
-    <span class="epithet">O Ex-Escravo</span>
-    <span class="dates">c. 50 d.C. — c. 135 d.C. · Hierápolis / Roma / Nicópolis</span>
-  </section>
-
-  <div class="wrap"><hr class="rule"></div>
-
-  <section class="section wrap">
-    <div class="content-grid">
-
       <div>
-        <h2>Vida</h2>
-        <p>
-          Epicteto nasceu escravo na cidade de Hierápolis, na Frígia, e foi
-          levado a Roma, onde pertenceu a um secretário do imperador Nero.
-          Ainda escravizado, teve permissão para estudar filosofia estoica com
-          o mestre Musônio Rufo. Segundo relatos antigos, sofreu uma lesão
-          permanente na perna — alguns dizem que provocada por um castigo do
-          próprio senhor — que o deixou manco pelo resto da vida.
-        </p>
-        <p>
-          Já liberto, ensinou filosofia em Roma até ser expulso da cidade,
-          junto com outros filósofos, por decreto do imperador Domiciano.
-          Estabeleceu então sua própria escola em Nicópolis, na Grécia, onde
-          viveu com extrema simplicidade material e formou gerações de
-          alunos. Ele mesmo nunca escreveu nada: tudo o que conhecemos de seu
-          pensamento vem das anotações feitas por seu discípulo Arriano.
-        </p>
+        <p class="dates">c. 50 d.C. – c. 135 d.C.</p>
+        <h1>Epicteto</h1>
+        <p class="lede">O escravo liberto</p>
       </div>
-
-      <div>
-        <h2>Pensamento</h2>
-        <p>
-          O núcleo do ensinamento de Epicteto é a distinção entre o que está
-          em nosso poder — nossos julgamentos, desejos e ações — e o que não
-          está, como nosso corpo, nossa reputação ou os acontecimentos ao
-          nosso redor. O sofrimento, dizia, nasce sempre de confundir essas
-          duas categorias: de tentar controlar o incontrolável ou de depositar
-          nossa felicidade em coisas externas.
-        </p>
-        <p>
-          Sua filosofia, marcada por um tom direto e quase militar de
-          disciplina interior, ensinava que a verdadeira liberdade não depende
-          da condição social — afinal, ele mesmo havia sido escravo — mas da
-          capacidade de manter a própria vontade alinhada com a razão, mesmo
-          diante da perda, da dor ou da injustiça.
-        </p>
-      </div>
-
     </div>
 
-    <div class="quote-block" style="margin-top:56px">
-      Epicteto ensinava que não são os acontecimentos que perturbam as
-      pessoas, mas as opiniões que elas formam sobre esses acontecimentos.
-      <cite>Sobre o pensamento de Epicteto</cite>
+    <div class="philo-content">
+      <p>Epicteto nasceu escravo na Frígia, na Ásia Menor, e foi levado ainda jovem para Roma, onde serviu a
+      um secretário do imperador Nero. Mesmo nessa condição, teve permissão para estudar filosofia estoica
+      com Musônio Rufo. Após ser libertado, passou a ensinar em Roma até que, quando os filósofos foram
+      expulsos da cidade por ordem imperial, mudou-se para Nicópolis, na Grécia, onde fundou sua própria
+      escola.</p>
+
+      <p>Epicteto nunca escreveu nada: assim como Sócrates, ensinava por meio de diálogo direto com os
+      alunos. Tudo o que conhecemos de seu pensamento vem das anotações feitas por um discípulo, o
+      historiador Arriano, reunidas nas "Diatribes" e no pequeno manual conhecido como "Encheirídion", ou
+      "Manual".</p>
+
+      <p>Sua ideia central é simples de enunciar, mas exigente de praticar: algumas coisas dependem de nós —
+      nossos julgamentos, desejos e ações — e outras não — nosso corpo, nossa reputação, os eventos externos.
+      A perturbação nasce de tentar controlar o que não está em nosso poder; a liberdade nasce de concentrar
+      toda a atenção no que está.</p>
+
+      <p>Essa distinção entre o que depende e o que não depende de nós tornou-se um dos conceitos mais
+      citados de toda a filosofia estoica, e influenciou diretamente autores posteriores — inclusive o
+      imperador Marco Aurélio, leitor atento de suas lições.</p>
     </div>
-  </section>
+
+    <blockquote class="pull-quote">
+      Epicteto ensinava que não são os acontecimentos que perturbam as pessoas, mas o julgamento que fazemos
+      sobre eles.
+      <cite>— resumo do ensinamento atribuído a Epicteto</cite>
+    </blockquote>
+
+    <nav class="next-prev" aria-label="Navegação entre filósofos">
+      <a href="seneca.html">← Anterior: Sêneca</a>
+      <a href="marco-aurelio.html">Próximo: Marco Aurélio →</a>
+    </nav>
+  </article>
+
 </main>
 
-<footer>
-  <div class="wrap">Os Estóicos — <a href="index.html">voltar ao início</a></div>
+<footer class="site-footer">
+  <p>Site criado como material de estudo sobre a filosofia estoica.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
