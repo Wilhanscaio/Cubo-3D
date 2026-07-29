@@ -3,99 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sêneca — Os Estóicos</title>
+<title>Sêneca — Estoicismo</title>
+<meta name="description" content="Vida e ideias de Lúcio Aneu Sêneca, estadista e filósofo estoico romano.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="frieze">
-  <div class="frieze-inner">
-    <div class="brand">OS ESTÓI<span>C</span>OS</div>
-    <nav class="frieze-links" aria-label="Filósofos">
-      <a href="zenao.html">Zenão</a>
-      <a href="cleantes.html">Cleantes</a>
-      <a href="crisipo.html">Crisipo</a>
-      <a href="seneca.html" class="current">Sêneca</a>
-      <a href="epicteto.html">Epicteto</a>
-      <a href="marco-aurelio.html">Marco Aurélio</a>
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title"><a href="index.html">Estoicismo</a></p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="zenao.html">Zenão</a></li>
+        <li><a href="cleantes.html">Cleantes</a></li>
+        <li><a href="seneca.html" aria-current="page">Sêneca</a></li>
+        <li><a href="epicteto.html">Epicteto</a></li>
+        <li><a href="marco-aurelio.html">Marco Aurélio</a></li>
+      </ul>
     </nav>
+    <div class="font-controls" role="group" aria-label="Ajustar tamanho do texto">
+      <span>Texto</span>
+      <button id="font-decrease" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="font-reset" type="button" aria-label="Restaurar tamanho padrão do texto">A</button>
+      <button id="font-increase" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap" style="padding-top:20px">
-    <a class="back-link" href="index.html">← Voltar à Stoa</a>
-  </div>
+<main id="conteudo">
 
-  <section class="p-hero wrap">
-    <div class="coin large">
-      <div class="coin-inner">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Seneca_antique_sculpture.JPG?width=700" alt="Escultura antiga de Sêneca">
+  <p class="breadcrumb"><a href="index.html">Início</a> → Sêneca</p>
+
+  <article>
+    <div class="philo-header">
+      <div class="portrait-wrap">
+        <!-- Troque esta imagem substituindo o arquivo em imagens/seneca.jpg -->
+        <img class="philo-portrait" src="imagens/seneca.jpg" alt="Busto antigo de Sêneca"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'philo-portrait placeholder',textContent:'S'}))">
       </div>
-    </div>
-    <h1>Lúcio Aneu Sêneca</h1>
-    <span class="epithet">O Estadista</span>
-    <span class="dates">c. 4 a.C. — 65 d.C. · Córdoba / Roma</span>
-  </section>
-
-  <div class="wrap"><hr class="rule"></div>
-
-  <section class="section wrap">
-    <div class="content-grid">
-
       <div>
-        <h2>Vida</h2>
-        <p>
-          Nascido na Hispânia romana, em Córdoba, Sêneca foi levado ainda
-          criança para Roma, onde se formou como orador e advogado antes de
-          ingressar na vida política. Sua carreira foi marcada por reviravoltas
-          dramáticas: exilado na Córsega por oito anos sob acusações
-          envolvendo a família imperial, foi depois chamado de volta para ser
-          tutor do jovem Nero, futuro imperador.
-        </p>
-        <p>
-          Como conselheiro de Nero, Sêneca acumulou enorme riqueza e
-          influência política — uma posição que sempre gerou tensão com seus
-          próprios ensinamentos sobre simplicidade e desapego. Quando caiu em
-          desgraça, foi acusado de participar de uma conspiração contra o
-          imperador e obrigado a tirar a própria vida, o que fez com
-          serenidade diante de seus amigos, segundo o relato do historiador
-          Tácito.
-        </p>
+        <p class="dates">c. 4 a.C. – 65 d.C.</p>
+        <h1>Lúcio Aneu Sêneca</h1>
+        <p class="lede">O estadista</p>
       </div>
-
-      <div>
-        <h2>Pensamento</h2>
-        <p>
-          Diferente dos estoicos gregos, Sêneca escreveu majoritariamente em
-          latim e em forma de cartas e ensaios, tornando a filosofia acessível
-          e prática. Suas Cartas a Lucílio abordam temas como o medo da morte,
-          o valor do tempo, a amizade e o controle da raiva, sempre com um
-          tom pessoal e direto, como se estivesse aconselhando um amigo.
-        </p>
-        <p>
-          Para Sêneca, a filosofia não era um exercício acadêmico, mas um guia
-          diário para viver bem — repetia que deveríamos tratar cada dia como
-          se fosse completo em si mesmo e nos preparar mentalmente para as
-          perdas e reviravoltas da fortuna, de modo que nada nos pegasse
-          verdadeiramente de surpresa.
-        </p>
-      </div>
-
     </div>
 
-    <div class="quote-block" style="margin-top:56px">
-      Sêneca insistia que não é a duração da vida que a torna valiosa, mas o
-      uso que fazemos do tempo que nos é dado — e que a maior parte das
-      pessoas o desperdiça sem perceber.
-      <cite>Sobre o pensamento de Sêneca</cite>
+    <div class="philo-content">
+      <p>Nascido em Córdoba, na Hispânia, Sêneca foi levado ainda criança para Roma, onde recebeu formação
+      retórica e filosófica de alto nível. Diferente de Zenão, Cleantes ou Epicteto, ele não viveu como
+      professor de escola, mas como homem público: advogado, senador, tutor e depois conselheiro do jovem
+      imperador Nero, chegando a administrar de fato boa parte do governo romano por vários anos.</p>
+
+      <p>Essa proximidade com o poder tornou sua vida uma espécie de teste constante para sua própria
+      filosofia. Sêneca escreveu sobre como permanecer equilibrado em meio à riqueza, à perda e ao perigo —
+      temas que conheceu de perto, já que passou por exílio, por acusações políticas e, por fim, foi
+      condenado por Nero a tirar a própria vida, ordem que cumpriu com uma serenidade que seus
+      contemporâneos registraram como exemplar.</p>
+
+      <p>Sua obra é vasta: as "Cartas a Lucílio", tratados como "Sobre a Brevidade da Vida" e "Sobre a Ira",
+      além de peças de teatro. Ali, Sêneca trata a filosofia como algo prático — um exercício diário de
+      autoexame — mais do que um sistema teórico abstrato, e insiste que o tempo é o único bem realmente
+      escasso que temos.</p>
+
+      <p>Por unir literatura, política e filosofia, Sêneca tornou-se um dos autores estoicos mais lidos ao
+      longo da história, influenciando desde pensadores renascentistas até discussões contemporâneas sobre
+      produtividade e gestão do tempo.</p>
     </div>
-  </section>
+
+    <blockquote class="pull-quote">
+      Sêneca insistia que não é porque as coisas são difíceis que não ousamos: é porque não ousamos que elas
+      se tornam difíceis.
+      <cite>— resumo do ensinamento atribuído a Sêneca</cite>
+    </blockquote>
+
+    <nav class="next-prev" aria-label="Navegação entre filósofos">
+      <a href="cleantes.html">← Anterior: Cleantes</a>
+      <a href="epicteto.html">Próximo: Epicteto →</a>
+    </nav>
+  </article>
+
 </main>
 
-<footer>
-  <div class="wrap">Os Estóicos — <a href="index.html">voltar ao início</a></div>
+<footer class="site-footer">
+  <p>Site criado como material de estudo sobre a filosofia estoica.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
