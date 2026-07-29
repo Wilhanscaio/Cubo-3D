@@ -1,0 +1,46 @@
+COMO USAR ESTE SITE
+====================
+
+Estrutura de arquivos:
+- index.html          → página inicial
+- zenao.html           → página do Zenão
+- cleantes.html        → página do Cleantes
+- seneca.html          → página do Sêneca
+- epicteto.html        → página do Epicteto
+- marco-aurelio.html   → página do Marco Aurélio
+- style.css            → estilo visual (cores, fontes, layout)
+- script.js            → botão de aumentar/diminuir o texto
+- imagens/             → pasta onde você deve colocar os retratos
+
+PARA ADICIONAR AS IMAGENS
+Coloque um arquivo de imagem dentro da pasta "imagens" com exatamente
+este nome (formato .jpg), para cada filósofo:
+
+  imagens/zenao.jpg
+  imagens/cleantes.jpg
+  imagens/seneca.jpg
+  imagens/epicteto.jpg
+  imagens/marco-aurelio.jpg
+
+Enquanto a imagem não existir, a página mostra automaticamente um
+círculo com a inicial do nome no lugar do retrato — o site nunca
+quebra por falta de imagem.
+
+Sugestão: use imagens de domínio público (bustos e estátuas antigas
+já estão em domínio público). O Wikimedia Commons é uma boa fonte:
+https://commons.wikimedia.org
+
+ACESSIBILIDADE
+- Fonte de leitura: Atkinson Hyperlegible, desenhada especificamente
+  para facilitar a leitura por pessoas com baixa visão.
+- Cores de alto contraste, com suporte automático a modo escuro
+  (segue a preferência do sistema operacional do visitante).
+- Botões "A−, A, A+" no topo de cada página ajustam o tamanho do
+  texto, e a escolha é lembrada nas próximas visitas.
+- Navegação por teclado com indicação de foco bem visível.
+- Link "Pular para o conteúdo" no início de cada página.
+
+COMO ABRIR
+Basta abrir o arquivo index.html no navegador. Para publicar na
+internet, envie a pasta inteira (com a subpasta "imagens") para um
+serviço de hospedagem como GitHub Pages, Netlify ou similar.
