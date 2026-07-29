@@ -3,102 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zenão de Cítio — Os Estóicos</title>
+<title>Zenão de Cítio — Estoicismo</title>
+<meta name="description" content="Vida e ideias de Zenão de Cítio, fundador da escola estoica.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="frieze">
-  <div class="frieze-inner">
-    <div class="brand">OS ESTÓI<span>C</span>OS</div>
-    <nav class="frieze-links" aria-label="Filósofos">
-      <a href="zenao.html" class="current">Zenão</a>
-      <a href="cleantes.html">Cleantes</a>
-      <a href="crisipo.html">Crisipo</a>
-      <a href="seneca.html">Sêneca</a>
-      <a href="epicteto.html">Epicteto</a>
-      <a href="marco-aurelio.html">Marco Aurélio</a>
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title"><a href="index.html">Estoicismo</a></p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="zenao.html" aria-current="page">Zenão</a></li>
+        <li><a href="cleantes.html">Cleantes</a></li>
+        <li><a href="seneca.html">Sêneca</a></li>
+        <li><a href="epicteto.html">Epicteto</a></li>
+        <li><a href="marco-aurelio.html">Marco Aurélio</a></li>
+      </ul>
     </nav>
+    <div class="font-controls" role="group" aria-label="Ajustar tamanho do texto">
+      <span>Texto</span>
+      <button id="font-decrease" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="font-reset" type="button" aria-label="Restaurar tamanho padrão do texto">A</button>
+      <button id="font-increase" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap" style="padding-top:20px">
-    <a class="back-link" href="index.html">← Voltar à Stoa</a>
-  </div>
+<main id="conteudo">
 
-  <section class="p-hero wrap">
-    <div class="coin large">
-      <div class="coin-inner">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Zeno_of_Citium_bust,_Farnese_collection_(Naples).jpg?width=700" alt="Busto de mármore de Zenão de Cítio">
+  <p class="breadcrumb"><a href="index.html">Início</a> → Zenão de Cítio</p>
+
+  <article>
+    <div class="philo-header">
+      <div class="portrait-wrap">
+        <!-- Troque esta imagem substituindo o arquivo em imagens/zenao.jpg -->
+        <img class="philo-portrait" src="imagens/zenao.jpg" alt="Busto antigo de Zenão de Cítio"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'philo-portrait placeholder',textContent:'Z'}))">
       </div>
-    </div>
-    <h1>Zenão de Cítio</h1>
-    <span class="epithet">O Fundador</span>
-    <span class="dates">c. 334 a.C. — c. 262 a.C. · Cítio, Chipre / Atenas</span>
-  </section>
-
-  <div class="wrap"><hr class="rule"></div>
-
-  <section class="section wrap">
-    <div class="content-grid">
-
       <div>
-        <h2>Vida</h2>
-        <p>
-          Zenão nasceu na cidade de Cítio, no Chipre, filho de um mercador. Diz a
-          tradição que, após sobreviver a um naufrágio a caminho de Atenas, entrou
-          por acaso em uma livraria e leu um trecho sobre Sócrates. Impressionado,
-          perguntou onde poderia encontrar homens como aquele — e foi então
-          apresentado ao filósofo cínico Crates de Tebas, que se tornou seu
-          primeiro mestre.
-        </p>
-        <p>
-          Depois de estudar também com os megáricos e com pensadores ligados à
-          Academia platônica, Zenão passou a ensinar por conta própria, por volta
-          de 300 a.C., sob o pórtico coberto e decorado com afrescos conhecido
-          como Stoa Poikile, no coração da ágora de Atenas. Foi desse lugar —
-          a "stoa" — que seus seguidores receberam o nome de estoicos. Zenão
-          viveu com grande simplicidade, mesmo tendo recusado a cidadania
-          ateniense por lealdade à sua terra natal, e foi homenageado pela
-          cidade com uma coroa de ouro e um funeral público após sua morte.
-        </p>
+        <p class="dates">c. 334 a.C. – c. 262 a.C.</p>
+        <h1>Zenão de Cítio</h1>
+        <p class="lede">O fundador do Estoicismo</p>
       </div>
-
-      <div>
-        <h2>Pensamento</h2>
-        <p>
-          Zenão foi o primeiro a organizar a filosofia estoica em três partes
-          que se sustentam mutuamente: a lógica, que ensina a raciocinar e a
-          distinguir o verdadeiro do falso; a física, que descreve um universo
-          racional e ordenado, atravessado por um princípio divino chamado
-          Logos; e a ética, que busca a vida boa através da virtude e da
-          concordância com a natureza.
-        </p>
-        <p>
-          Para ele, a felicidade não depende de riqueza, saúde ou reputação —
-          coisas "indiferentes" que podem ou não ajudar, mas nunca garantem o
-          bem viver — e sim do uso correto da razão diante de qualquer
-          circunstância. As emoções perturbadoras, como o medo e o desejo
-          desmedido, nasceriam de julgamentos equivocados, e não das coisas em
-          si mesmas.
-        </p>
-      </div>
-
     </div>
 
-    <div class="quote-block" style="margin-top:56px">
-      Nada de original de Zenão sobreviveu por completo — apenas fragmentos
-      citados por autores posteriores — mas sua ideia central atravessou os
-      séculos: a razão bem exercida é o único bem verdadeiro.
-      <cite>Sobre o legado de Zenão</cite>
+    <div class="philo-content">
+      <p>Zenão nasceu na cidade de Cítio, em Chipre, filho de um mercador fenício. Diz a tradição que ele
+      chegou a Atenas depois de sobreviver a um naufrágio que destruiu seu carregamento de púrpura. Sem
+      negócio para tocar, passou a frequentar livrarias e assistir às aulas dos filósofos da cidade,
+      estudando primeiro com os cínicos e depois com pensadores acadêmicos e megáricos.</p>
+
+      <p>Por volta de 300 a.C., Zenão passou a ensinar por conta própria num pórtico público de Atenas
+      decorado com afrescos, conhecido como Stoa Pecile ("pórtico pintado"). Foi desse local que a escola
+      recebeu o nome pelo qual ficou conhecida: Estoicismo. Diferente de outras escolas da época, que se
+      reuniam em jardins ou ginásios privados, Zenão ensinava em um espaço aberto ao público.</p>
+
+      <p>Sua filosofia unia lógica, física e ética num único sistema coerente: para viver bem, é preciso
+      compreender a ordem racional que governa o universo (o Logos) e viver de acordo com a natureza. A
+      virtude — e não o prazer ou a riqueza — seria o único bem verdadeiro, e as perturbações emocionais
+      surgiriam de julgamentos equivocados sobre o que realmente importa.</p>
+
+      <p>Zenão viveu de forma simples e disciplinada, e essa coerência entre discurso e conduta atraiu
+      discípulos de toda a Grécia, incluindo Cleantes, que herdaria a direção da escola após sua morte.</p>
     </div>
-  </section>
+
+    <blockquote class="pull-quote">
+      Zenão costumava dizer que a razão do homem deveria seguir a razão que governa o cosmo — e que a
+      verdadeira riqueza está em precisar de pouco.
+      <cite>— resumo do ensinamento atribuído a Zenão de Cítio</cite>
+    </blockquote>
+
+    <nav class="next-prev" aria-label="Navegação entre filósofos">
+      <a href="index.html">← Voltar ao início</a>
+      <a href="cleantes.html">Próximo: Cleantes →</a>
+    </nav>
+  </article>
+
 </main>
 
-<footer>
-  <div class="wrap">Os Estóicos — <a href="index.html">voltar ao início</a></div>
+<footer class="site-footer">
+  <p>Site criado como material de estudo sobre a filosofia estoica.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
