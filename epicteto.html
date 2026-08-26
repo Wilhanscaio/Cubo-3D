@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epicteto — Estoicismo</title>
+<meta name="description" content="Vida e ideias de Epicteto, filósofo estoico que nasceu escravo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title"><a href="index.html">Estoicismo</a></p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="zenao.html">Zenão</a></li>
+        <li><a href="cleantes.html">Cleantes</a></li>
+        <li><a href="seneca.html">Sêneca</a></li>
+        <li><a href="epicteto.html" aria-current="page">Epicteto</a></li>
+        <li><a href="marco-aurelio.html">Marco Aurélio</a></li>
+      </ul>
+    </nav>
+    <div class="font-controls" role="group" aria-label="Ajustar tamanho do texto">
+      <span>Texto</span>
+      <button id="font-decrease" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="font-reset" type="button" aria-label="Restaurar tamanho padrão do texto">A</button>
+      <button id="font-increase" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <p class="breadcrumb"><a href="index.html">Início</a> → Epicteto</p>
+
+  <article>
+    <div class="philo-header">
+      <div class="portrait-wrap">
+        <!-- Troque esta imagem substituindo o arquivo em imagens/epicteto.jpg -->
+        <img class="philo-portrait" src="imagens/epicteto.jpg" alt="Representação de Epicteto"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'philo-portrait placeholder',textContent:'E'}))">
+      </div>
+      <div>
+        <p class="dates">c. 50 d.C. – c. 135 d.C.</p>
+        <h1>Epicteto</h1>
+        <p class="lede">O escravo liberto</p>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab-list" role="tablist" aria-label="Sobre Epicteto">
+        <button class="tab" role="tab" id="tab-historia" aria-controls="painel-historia" aria-selected="true">História</button>
+        <button class="tab" role="tab" id="tab-pensamento" aria-controls="painel-pensamento" aria-selected="false" tabindex="-1">Pensamento</button>
+        <button class="tab" role="tab" id="tab-frase" aria-controls="painel-frase" aria-selected="false" tabindex="-1">Frase</button>
+      </div>
+
+      <div class="tab-panel philo-content" id="painel-historia" role="tabpanel" aria-labelledby="tab-historia" tabindex="0">
+        <p>Epicteto nasceu escravo na Frígia, na Ásia Menor, e foi levado ainda jovem para Roma, onde serviu
+        a um secretário do imperador Nero. Mesmo nessa condição, teve permissão para estudar filosofia
+        estoica com Musônio Rufo.</p>
+
+        <p>Após ser libertado, passou a ensinar em Roma até que, quando os filósofos foram expulsos da
+        cidade por ordem imperial, mudou-se para Nicópolis, na Grécia, onde fundou sua própria escola.</p>
+
+        <p>Epicteto nunca escreveu nada: assim como Sócrates, ensinava por meio de diálogo direto com os
+        alunos. Tudo o que conhecemos de seu pensamento vem das anotações feitas por um discípulo, o
+        historiador Arriano, reunidas nas "Diatribes" e no pequeno manual conhecido como "Encheirídion", ou
+        "Manual".</p>
+      </div>
+
+      <div class="tab-panel philo-content" id="painel-pensamento" role="tabpanel" aria-labelledby="tab-pensamento" tabindex="0" hidden>
+        <p>Sua ideia central é simples de enunciar, mas exigente de praticar: algumas coisas dependem de
+        nós — nossos julgamentos, desejos e ações — e outras não — nosso corpo, nossa reputação, os eventos
+        externos.</p>
+
+        <p>A perturbação nasce de tentar controlar o que não está em nosso poder; a liberdade nasce de
+        concentrar toda a atenção no que está. Essa distinção entre o que depende e o que não depende de nós
+        tornou-se um dos conceitos mais citados de toda a filosofia estoica.</p>
+
+        <p>Epicteto insistia ainda que a filosofia não serve para impressionar os outros com teoria, mas
+        para transformar a própria conduta — quem só discute os princípios sem aplicá-los, para ele, ainda
+        não começou a filosofar de verdade.</p>
+      </div>
+
+      <div class="tab-panel" id="painel-frase" role="tabpanel" aria-labelledby="tab-frase" tabindex="0" hidden>
+        <blockquote class="pull-quote">
+          Epicteto ensinava que não são os acontecimentos que perturbam as pessoas, mas o julgamento que
+          fazemos sobre eles.
+          <cite>— resumo do ensinamento atribuído a Epicteto</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <nav class="next-prev" aria-label="Navegação entre filósofos">
+      <a href="seneca.html">← Anterior: Sêneca</a>
+      <a href="marco-aurelio.html">Próximo: Marco Aurélio →</a>
+    </nav>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <p>Site criado como material de estudo sobre a filosofia estoica.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

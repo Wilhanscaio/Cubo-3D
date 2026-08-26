@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sêneca — Estoicismo</title>
+<meta name="description" content="Vida e ideias de Lúcio Aneu Sêneca, estadista e filósofo estoico romano.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title"><a href="index.html">Estoicismo</a></p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="zenao.html">Zenão</a></li>
+        <li><a href="cleantes.html">Cleantes</a></li>
+        <li><a href="seneca.html" aria-current="page">Sêneca</a></li>
+        <li><a href="epicteto.html">Epicteto</a></li>
+        <li><a href="marco-aurelio.html">Marco Aurélio</a></li>
+      </ul>
+    </nav>
+    <div class="font-controls" role="group" aria-label="Ajustar tamanho do texto">
+      <span>Texto</span>
+      <button id="font-decrease" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="font-reset" type="button" aria-label="Restaurar tamanho padrão do texto">A</button>
+      <button id="font-increase" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <p class="breadcrumb"><a href="index.html">Início</a> → Sêneca</p>
+
+  <article>
+    <div class="philo-header">
+      <div class="portrait-wrap">
+        <!-- Troque esta imagem substituindo o arquivo em imagens/seneca.jpg -->
+        <img class="philo-portrait" src="imagens/seneca.jpg" alt="Busto antigo de Sêneca"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'philo-portrait placeholder',textContent:'S'}))">
+      </div>
+      <div>
+        <p class="dates">c. 4 a.C. – 65 d.C.</p>
+        <h1>Lúcio Aneu Sêneca</h1>
+        <p class="lede">O estadista</p>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab-list" role="tablist" aria-label="Sobre Sêneca">
+        <button class="tab" role="tab" id="tab-historia" aria-controls="painel-historia" aria-selected="true">História</button>
+        <button class="tab" role="tab" id="tab-pensamento" aria-controls="painel-pensamento" aria-selected="false" tabindex="-1">Pensamento</button>
+        <button class="tab" role="tab" id="tab-frase" aria-controls="painel-frase" aria-selected="false" tabindex="-1">Frase</button>
+      </div>
+
+      <div class="tab-panel philo-content" id="painel-historia" role="tabpanel" aria-labelledby="tab-historia" tabindex="0">
+        <p>Nascido em Córdoba, na Hispânia, Sêneca foi levado ainda criança para Roma, onde recebeu formação
+        retórica e filosófica de alto nível. Diferente de Zenão, Cleantes ou Epicteto, ele não viveu como
+        professor de escola, mas como homem público: advogado, senador, tutor e depois conselheiro do jovem
+        imperador Nero, chegando a administrar de fato boa parte do governo romano por vários anos.</p>
+
+        <p>Essa proximidade com o poder tornou sua vida uma espécie de teste constante para sua própria
+        filosofia. Sêneca passou por exílio, por acusações políticas e, por fim, foi condenado por Nero a
+        tirar a própria vida, ordem que cumpriu com uma serenidade que seus contemporâneos registraram como
+        exemplar.</p>
+
+        <p>Por unir literatura, política e filosofia, Sêneca tornou-se um dos autores estoicos mais lidos ao
+        longo da história, influenciando desde pensadores renascentistas até discussões contemporâneas sobre
+        produtividade e gestão do tempo.</p>
+      </div>
+
+      <div class="tab-panel philo-content" id="painel-pensamento" role="tabpanel" aria-labelledby="tab-pensamento" tabindex="0" hidden>
+        <p>Sêneca escreveu sobre como permanecer equilibrado em meio à riqueza, à perda e ao perigo — temas
+        que conheceu de perto ao longo da própria vida. Sua obra é vasta: as "Cartas a Lucílio", tratados
+        como "Sobre a Brevidade da Vida" e "Sobre a Ira", além de peças de teatro.</p>
+
+        <p>Ali, Sêneca trata a filosofia como algo prático — um exercício diário de autoexame — mais do que
+        um sistema teórico abstrato. Para ele, o tempo é o único bem realmente escasso que temos: riqueza e
+        posses podem ser recuperadas, mas o tempo perdido, nunca.</p>
+
+        <p>Outro tema central é o autocontrole diante da raiva e do medo: para Sêneca, a maior parte do
+        sofrimento humano vem da antecipação de males que talvez nunca aconteçam, e a filosofia serve
+        justamente para treinar a mente a não se deixar levar por essas antecipações.</p>
+      </div>
+
+      <div class="tab-panel" id="painel-frase" role="tabpanel" aria-labelledby="tab-frase" tabindex="0" hidden>
+        <blockquote class="pull-quote">
+          Sêneca insistia que não é porque as coisas são difíceis que não ousamos: é porque não ousamos que
+          elas se tornam difíceis.
+          <cite>— resumo do ensinamento atribuído a Sêneca</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <nav class="next-prev" aria-label="Navegação entre filósofos">
+      <a href="cleantes.html">← Anterior: Cleantes</a>
+      <a href="epicteto.html">Próximo: Epicteto →</a>
+    </nav>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <p>Site criado como material de estudo sobre a filosofia estoica.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
