@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleantes — Estoicismo</title>
+<meta name="description" content="Vida e ideias de Cleantes de Assos, segundo escolarca do Estoicismo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title"><a href="index.html">Estoicismo</a></p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="zenao.html">Zenão</a></li>
+        <li><a href="cleantes.html" aria-current="page">Cleantes</a></li>
+        <li><a href="seneca.html">Sêneca</a></li>
+        <li><a href="epicteto.html">Epicteto</a></li>
+        <li><a href="marco-aurelio.html">Marco Aurélio</a></li>
+      </ul>
+    </nav>
+    <div class="font-controls" role="group" aria-label="Ajustar tamanho do texto">
+      <span>Texto</span>
+      <button id="font-decrease" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="font-reset" type="button" aria-label="Restaurar tamanho padrão do texto">A</button>
+      <button id="font-increase" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <p class="breadcrumb"><a href="index.html">Início</a> → Cleantes</p>
+
+  <article>
+    <div class="philo-header">
+      <div class="portrait-wrap">
+        <!-- Troque esta imagem substituindo o arquivo em imagens/cleantes.jpg -->
+        <img class="philo-portrait" src="imagens/cleantes.jpg" alt="Representação de Cleantes de Assos"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'philo-portrait placeholder',textContent:'C'}))">
+      </div>
+      <div>
+        <p class="dates">c. 330 a.C. – c. 230 a.C.</p>
+        <h1>Cleantes de Assos</h1>
+        <p class="lede">O herdeiro obstinado</p>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab-list" role="tablist" aria-label="Sobre Cleantes de Assos">
+        <button class="tab" role="tab" id="tab-historia" aria-controls="painel-historia" aria-selected="true">História</button>
+        <button class="tab" role="tab" id="tab-pensamento" aria-controls="painel-pensamento" aria-selected="false" tabindex="-1">Pensamento</button>
+        <button class="tab" role="tab" id="tab-frase" aria-controls="painel-frase" aria-selected="false" tabindex="-1">Frase</button>
+      </div>
+
+      <div class="tab-panel philo-content" id="painel-historia" role="tabpanel" aria-labelledby="tab-historia" tabindex="0">
+        <p>Cleantes chegou a Atenas vindo da cidade de Assos, na Ásia Menor, e antes de se tornar filósofo
+        teria sido pugilista. Sem recursos para se sustentar apenas estudando, trabalhava durante a noite —
+        carregando água e amassando farinha, segundo o relato antigo — para poder assistir de dia às lições
+        de Zenão. Essa disciplina e perseverança se tornaram parte central de sua fama.</p>
+
+        <p>Foi ele quem sucedeu Zenão como escolarca, guiando a escola por cerca de trinta anos e garantindo
+        que o Estoicismo sobrevivesse à morte de seu fundador.</p>
+
+        <p>Cleantes formou discípulos importantes, entre eles Crisipo, que mais tarde sistematizaria e
+        expandiria enormemente a doutrina estoica, consolidando-a como uma das escolas filosóficas mais
+        influentes da Antiguidade.</p>
+      </div>
+
+      <div class="tab-panel philo-content" id="painel-pensamento" role="tabpanel" aria-labelledby="tab-pensamento" tabindex="0">
+        <p>Ao contrário de Zenão, que se destacava pela agudeza lógica, Cleantes era lembrado por sua força
+        de vontade e devoção quase religiosa aos princípios estoicos — a filosofia, para ele, era antes de
+        tudo uma prática de caráter.</p>
+
+        <p>Sua obra mais lembrada é o "Hino a Zeus", um poema que descreve a divindade suprema como a razão
+        universal que ordena todas as coisas, inclusive o que parece, à primeira vista, desordem ou
+        infortúnio. O texto resume bem a ideia estoica de aceitação ativa: cooperar conscientemente com uma
+        ordem racional maior do que nós, em vez de resistir a ela.</p>
+
+        <p>Essa noção de aceitação não significa passividade: para Cleantes, cooperar com a ordem do mundo é
+        um ato consciente de vontade, não resignação. Quem entende essa ordem age com propósito; quem não a
+        entende é arrastado por ela mesmo assim.</p>
+      </div>
+
+      <div class="tab-panel" id="painel-frase" role="tabpanel" aria-labelledby="tab-frase" tabindex="0">
+        <blockquote class="pull-quote">
+          Para Cleantes, quem resiste ao curso dos acontecimentos é arrastado por eles mesmo assim — só que
+          sofrendo; melhor é caminhar de bom grado ao lado do destino.
+          <cite>— resumo do ensinamento atribuído a Cleantes de Assos</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <nav class="next-prev" aria-label="Navegação entre filósofos">
+      <a href="zenao.html">← Anterior: Zenão</a>
+      <a href="seneca.html">Próximo: Sêneca →</a>
+    </nav>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <p>Site criado como material de estudo sobre a filosofia estoica.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
